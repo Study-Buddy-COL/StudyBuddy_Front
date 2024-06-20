@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,ts}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'primary-100': '#F0EAFE',
+        'primary-200': '#D0C3F2',
+        'primary-300': '#BAA6EE',
+        'primary-400': '#9C82DE',
+        'primary-500': '#795CC2',
+        'primary-600': '#5E41A7',
+        'primary-700': '#412881',
+        'primary-800': '#301E5C',
+        'primary-900': '#241745',
+
+        'secondary-100': '#FFE5E1',
+        'secondary-200': '#FCB1A6',
+        'secondary-300': '#F68373',
+        'secondary-400': '#F56A56',
+        'secondary-500': '#F25842',
+        'secondary-600': '#D83D27',
+        'secondary-700': '#A42918',
+        'secondary-800': '#77190B',
+        'secondary-900': '#3C0700',
+
+        'success-100': '#F5FCD2',
+        'success-200': '#E8FAA6',
+        'success-300': '#D3F178',
+        'success-400': '#BCE455',
+        'success-500': '#9CD323',
+        'success-600': '#7FB519',
+        'success-700': '#659711',
+        'success-800': '#4C7A0B',
+        'success-900': '#3B6506',
+
+        'warning-100': '#FFF4E4',
+        'warning-200': '#FFEBCE',
+        'warning-300': '#FFDAA6',
+        'warning-400': '#F8C884',
+        'warning-500': '#EFAE54',
+        'warning-600': '#E79D37',
+        'warning-700': '#C38123',
+        'warning-800': '#945E12',
+        'warning-900': '#6D4000',
+
+        'error-100': '#FFE7D3',
+        'error-200': '#FFC8A6',
+        'error-300': '#FFA37A',
+        'error-400': '#FCA5A5',
+        'error-500': '#FF7F59',
+        'error-600': '#DB2719',
+        'error-700': '#B71112',
+        'error-800': '#930B16',
+        'error-900': '#7A0619',
+
+        'info-100': '#F5EEFF',
+        'info-200': '#EDE0FF',
+        'info-300': '#E0CFF8',
+        'info-400': '#D2BBF2',
+        'info-500': '#BB96EF',
+        'info-600': '#AA79ED',
+        'info-700': '#945AE5',
+        'info-800': '#6C30C0',
+        'info-900': '#4F12A4',
+
+      },
+    },
+  },
+  plugins: [],
+}
