@@ -1,0 +1,15 @@
+
+/* Estilos del contenedor del sidebar */
+.sidebar {
+  width: 4rem; /* Ancho del sidebar contraído */
+  transition: width 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Cambiar los estilos cuando el checkbox está marcado */
+input[type="checkbox"]:checked ~ .sidebar {
+  width: 14rem; /* Ancho del sidebar expandido */
+}
+
+
+
+
