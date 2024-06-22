@@ -4,13 +4,13 @@
     </div>
     
     <div class="espacioSearchBarAndPic">
-        <div class="flex items-center w-full mb-3">
-            <input type="text" class="form-control h-10 border-2 border-purple-400 rounded-full w-full px-4" placeholder="Buscar..." aria-label="Buscar" aria-describedby="basic-addon2">
-            <button class="bg-purple-400 h-10 border-2 border-purple-400 rounded-full flex items-center justify-center ml-1" type="button" (click)="onSearchClick()"> 
+        <div class="flex items-center w-full"> <!-- w-full expande a la totalidad de la pagina -->
+            <input type="text" class="form-control h-10 border-2 border-purple-400 rounded-full w-full px-4 focus:outline-none focus:border-purple-500 placeholder-purple-300 purpleText" placeholder="Searching for something?" aria-label="espacioSearchBarAndPic" aria-describedby="basic-addon2">
+            <button class="bg-purple-400 h-10 w-10 border-2 border-purple-400 rounded-full flex items-center justify-center ml-1" type="button" (click)="onSearchClick()"> 
                 <i class="bi bi-search text-white"></i>
             </button>
-            <button type="button" class="profile-button ml-3" (click)="onProfileClick()">
-                <img src="assets/images/ProfilePic.png" alt="Imagen" class="profile-pic">
+            <button type="button" class="profile-button" (click)="onProfileClick()">
+                <img src="assets/images/profile-pic.svg" alt="Imagen" class="profile-pic">
             </button>
         </div>
     </div>

@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.purpleText {
+    color: #9C82DE;
+}
+
 .col-2 {
     flex: 1; /* Toma todo el espacio restante */
 }
@@ -21,7 +25,7 @@
     color: #9C82DE;
     font-family: 'bricolage grotesque', sans-serif;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2.25em;
 }
 
 .subtitle-no-bold {
@@ -38,10 +42,8 @@
 
 .espacioSearchBarAndPic {
     flex-grow: 1;
-}
-
-.espacioSearchBarAndPic .input-group {
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .profile-button {
@@ -53,6 +55,7 @@
 }
 
 .profile-pic {
+    margin-left: 2vh;
     width: 50px;
     height: 50px;
     border-radius: 50%;
