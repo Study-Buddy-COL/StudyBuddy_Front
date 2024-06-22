@@ -4,18 +4,14 @@
     </div>
     
     <div class="espacioSearchBarAndPic">
-        <div class="input-group mb-3" style="width: 100%; align-items: center;">
-            <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="basic-addon2" style="height: 40px; border: 2px solid #9C82DE; border-radius: 20px;">
-            <div class="input-group-append" style="margin-left: -1px;">
-                <button class="btn btn-outline-secondary" type="button" style="background-color: #9C82DE; height: 40px;  border: 2px solid #9C82DE; border-radius: 20px;" (click)="onSearchClick()"> 
-                    <i class="bi bi-search text-white"></i>
-                </button>
-            </div>
-            <div class="input-group-append" style="margin-left: 3%;">
-                <button type="button" class="profile-button" (click)="onProfileClick()">
-                    <img src="assets/images/ProfilePic.png" alt="Imagen" class="profile-pic">
-                </button>
-            </div>
+        <div class="flex items-center w-full mb-3">
+            <input type="text" class="form-control h-10 border-2 border-purple-400 rounded-full w-full px-4" placeholder="Buscar..." aria-label="Buscar" aria-describedby="basic-addon2">
+            <button class="bg-purple-400 h-10 border-2 border-purple-400 rounded-full flex items-center justify-center ml-1" type="button" (click)="onSearchClick()"> 
+                <i class="bi bi-search text-white"></i>
+            </button>
+            <button type="button" class="profile-button ml-3" (click)="onProfileClick()">
+                <img src="assets/images/ProfilePic.png" alt="Imagen" class="profile-pic">
+            </button>
         </div>
     </div>
 </div>
