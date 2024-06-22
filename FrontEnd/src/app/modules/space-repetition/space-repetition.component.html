@@ -1,1 +1,115 @@
-<p>space-repetition works!</p>
+<div class="layout">
+    <!-- Sidebar
+    <div class="col-1">
+        <app-sidebar></app-sidebar>
+    </div>  -->
+
+    <!-- <div class="col-2"> -->
+    <div class="col-2">
+
+        <!-- Top navigation bar
+        <div class="topnav">
+            <app-topbar [title]="'Flashcards - Subject'"></app-topbar>
+        </div>  -->
+
+        <div class="content">
+            <div style="padding-left:16px">
+                <h2 class="title">Top Navigation Example</h2>
+                <p class="subtitle-no-bold">Some content..</p>
+            </div>
+        </div>
+
+        <div class="progressBarDiv">
+            <div class="progress-loader">
+                <div class="progress" [style.width.%]="progressPercentage"></div>
+            </div>
+            <p class="title progressCounter">{{ progressPercentage }}%</p>
+            <p class="title progressCounter">{{ viewedFlashcards }}/{{ flashcards.length }}</p>
+        </div>
+
+        <!-- Flashcards section -->
+
+        <div class="flashcardsDiv">
+
+
+            <!-- Flashcard 3 (20% smaller) -->
+            <div *ngFor="let flashcard of flashcards.slice(2, 3); let i = index" class="flip-card center smaller2"
+                [style.--gradient-color-1]="flashcard.gradientColor1"
+                [style.--gradient-color-2]="flashcard.gradientColor2">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">{{ flashcard.frontText }}</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Cara trasera 3</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Flashcard 2 (10% smaller) -->
+            <div *ngFor="let flashcard of flashcards.slice(1, 2); let i = index" class="flip-card center smaller"
+                [style.--gradient-color-1]="flashcard.gradientColor1"
+                [style.--gradient-color-2]="flashcard.gradientColor2">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">{{ flashcard.frontText }}</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">{{ flashcard.backText }}</p>
+                        <!-- Botón para continuar a la siguiente flashcard -->
+                        <div class="button-container">
+                            <button class="card-button btnOK" style="width: 100%;">Continue
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- La informacion de la flashcard principal es la única visible -->
+            <!-- Flashcard 1. PRINCIPAL. Se obtiene dinamicamente el estado de "Flipped" para determinar la rotacion de la tarjeta al igual que los colores para determinar el gradiente -->
+            <div *ngFor="let flashcard of flashcards.slice(0, 1); let i = index"
+                class="flip-card center main flashcard-enter" [class.flipped]="flipped"
+                [style.--gradient-color-1]="flashcard.gradientColor1"
+                [style.--gradient-color-2]="flashcard.gradientColor2">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <!-- Iconos -->
+                        <div class="icons-container">
+                            <button class="icon-button" (click)="btnVolume()">
+                                <i class="bi bi-volume-up-fill"></i>
+                            </button>
+                            <button class="icon-button" (click)="btnPencil()">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                        </div>
+                        <p class="title">{{ flashcard.frontText }}</p>
+                        <!-- Botones: Got it, Not Sure -->
+                        <div class="button-container">
+                            <button class="card-button btnOK" (click)="nextCard()">Got it!
+                                <i class="bi bi-check-circle"></i>
+                            </button>
+                            <button class="card-button btnWrong" (click)="toggleFlip()">Not sure? Flip</button>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">{{ flashcard.backText }}</p>
+                        <!-- Botón para continuar a la siguiente flashcard -->
+                        <div class="button-container">
+                            <button class="card-button btnContinue" style="width: 100%;" (click)="nextCard()">Continue
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
