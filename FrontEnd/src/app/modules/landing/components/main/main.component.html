@@ -1,0 +1,222 @@
+<!-- Header -->
+<header class="flex justify-between items-center py-3 bg-white border-b-2 border-primary-200 px-4 mb-5">
+    <img src="./assets/images/logo-hero.svg" alt="StudyBuddy Image">
+    <nav>
+      <ul id="menu" class="hidden md:flex items-center space-x-4 text-gray-600">
+        <li><a class="text-primary-700 mx-2" href="#">How it Works</a></li>
+        <li><a class="text-primary-700 mx-2" href="#">Genius AI</a></li>
+        <li><a class="text-primary-700 font-bold mx-2" href="#">Enter Portal</a></li>
+        <button class="bg-secondary-400 text-white py-1 px-4 rounded">Get Started</button>
+      </ul>
+      <button id="menu-toggle" class="md:hidden flex items-center text-primary-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-2 h-auto mb-10">
+  
+    <!-- Information Section -->
+    <div class="card px-7 order-2 lg:order-1 ">
+      <h1 class="text-5xl justify-start font-bold text-primary-400 my-16">Master Your Studies</h1>
+      <p class="text-primary-600 mt-4 w-full">Discover the enchantment of studying with our <span class="font-bold">AI powered tools</span>,
+        crafted to unlock your full academic potential.</p>
+      <button class="mt-8 bg-secondary-300 text-white py-1 px-6 rounded-lg w-full font-bold text-2xl">¡Start Now!</button>
+    </div>
+  
+    <!-- Image Section -->
+    <div class="card col-span-1 lg:col-span-2 order-1 lg:order-2 ">
+      <img src="../assets/images/hero.svg" alt="StudyBuddy Image" class="w-full h-auto object-cover">
+    </div>
+  
+  </main>
+  
+  <!-- Second Content -->
+  <div class="bg-warning-300 flex flex-col items-center justify-center h-auto py-16 ">
+    <div class="text-center">
+      <h1 class="text-5xl font-bold text-secondary-300">Master Your Studies</h1>
+      <p class="text-secondary-600 max-w-xl mx-auto">Adapt study habits with smart technology.</p>
+    </div>
+  
+    <div class="container mx-auto   mt-5">
+      <img src="../assets/images/carrousel.svg" alt="StudyBuddy Image" height="auto" width="100%">
+    </div>
+  </div>
+  
+  
+  <div class="container mx-auto ">
+  
+    <!-- Main Content -->
+    <main class="flex place-content-between px-8 py-16">
+      <div class="basis-1/2">
+        <h1 class="text-5xl justify-start font-bold text-primary-400">Master Your Studies</h1>
+        <p class="text-primary-600 mt-4 max-w-xl">Discover the enchantment of studying with our <span class="font-bold">AI powered tools</span>,
+          crafted to unlock your full academic potential.</p>
+        <button class="mt-8 bg-secondary-300 text-white py-1 px-6 rounded-lg">¡Start Now!</button>
+      </div>
+  
+      <div class="mt-16 ">
+        <img src="../assets/images/hero.svg" alt="StudyBuddy Image" height="592" width="867">
+      </div>
+    </main>
+  
+  </div>
+  
+  <!-- Optional: por ahora -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  
+  <!-- https://dribbble.com/shots/14959823-Dashboard-UI-Elements -->
+  <div class="h-screen p-6">
+    <div class="flex justify-between items-center mb-4">
+      <button class="text-purple-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <h2 class="text-xl font-semibold text-purple-700">July 2022</h2>
+      <button class="text-purple-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+  
+    <!-- { /*variation dark set*/ } -->
+    <div class='flex justify-start md:justify-center rounded-lg  mx-auto py-1 px-2  md:mx-10 mb-10'>
+  
+      <div
+        class='flex group hover:bg-primary-600 pb-1 hover-dark-shadow rounded-full mx-1 transition-all	duration-300 cursor-pointer justify-center w-16'>
+        <div class='flex items-baseline px-4 py-1'>
+          <div class='text-center'>
+            <p
+              class='text-primary-600 group-hover:text-white text-lg transition-all  group-hover:font-semibold duration-300'>
+              S </p>
+            <p
+              class='text-primary-600 group-hover:text-white -mb-0 rounded-full bg-warning-200 group-hover:bg-secondary-300 p-3 group-hover:font-bold transition-all	duration-300'>
+              11 </p>
+          </div>
+        </div>
+      </div>
+  
+      <div
+        class='flex group hover:bg-primary-600 pb-1 hover-dark-shadow rounded-full mx-1 transition-all	duration-300 cursor-pointer justify-center w-16'>
+        <div class='flex items-baseline px-4 py-1'>
+          <div class='text-center'>
+            <p
+              class='text-primary-600 group-hover:text-white text-lg transition-all  group-hover:font-semibold duration-300'>
+              M </p>
+            <p
+              class='text-primary-600 group-hover:text-white -mb-0 rounded-full bg-warning-200 group-hover:bg-secondary-300 p-3 group-hover:font-bold transition-all	duration-300'>
+              12 </p>
+          </div>
+        </div>
+      </div>
+  
+      <div
+        class='flex group hover:bg-primary-600 pb-1 hover-dark-shadow rounded-full mx-1 transition-all	duration-300 cursor-pointer justify-center w-16'>
+        <div class='flex items-baseline px-4 py-1'>
+          <div class='text-center'>
+            <p
+              class='text-primary-600 group-hover:text-white text-lg transition-all  group-hover:font-semibold duration-300'>
+              T </p>
+            <p
+              class='text-primary-600 group-hover:text-white -mb-0 rounded-full bg-warning-200 group-hover:bg-secondary-300 p-3 group-hover:font-bold transition-all	duration-300'>
+              13 </p>
+          </div>
+        </div>
+      </div>
+  
+      <div
+        class='flex group hover:bg-primary-600 pb-1 hover-dark-shadow rounded-full mx-1 transition-all	duration-300 cursor-pointer justify-center w-16'>
+        <div class='flex items-baseline px-4 py-1'>
+          <div class='text-center'>
+            <p
+              class='text-primary-600 group-hover:text-white text-lg transition-all  group-hover:font-semibold duration-300'>
+              W </p>
+            <p
+              class='text-primary-600 group-hover:text-white -mb-0 rounded-full bg-warning-200 group-hover:bg-secondary-300 p-3 group-hover:font-bold transition-all	duration-300'>
+              14 </p>
+          </div>
+        </div>
+      </div>
+  
+      <div
+        class='flex group hover:bg-primary-600 pb-1 hover-dark-shadow rounded-full mx-1 transition-all	duration-300 cursor-pointer justify-center w-16'>
+        <div class='flex items-baseline px-4 py-1'>
+          <div class='text-center'>
+            <p
+              class='text-primary-600 group-hover:text-white text-lg transition-all  group-hover:font-semibold duration-300'>
+              T </p>
+            <p
+              class='text-primary-600 group-hover:text-white -mb-0 rounded-full bg-warning-200 group-hover:bg-secondary-300 p-3 group-hover:font-bold transition-all	duration-300'>
+              15 </p>
+          </div>
+        </div>
+      </div>
+  
+      <div
+        class='flex group hover:bg-primary-600 pb-1 hover-dark-shadow rounded-full mx-1 transition-all	duration-300 cursor-pointer justify-center w-16'>
+        <div class='flex items-baseline px-4 py-1'>
+          <div class='text-center'>
+            <p
+              class='text-primary-600 group-hover:text-white text-lg transition-all  group-hover:font-semibold duration-300'>
+              F </p>
+            <p
+              class='text-primary-600 group-hover:text-white -mb-0 rounded-full bg-warning-200 group-hover:bg-secondary-300 p-3 group-hover:font-bold transition-all	duration-300'>
+              16 </p>
+          </div>
+        </div>
+      </div>
+  
+      <div
+        class='flex group hover:bg-primary-600 pb-1 hover-dark-shadow rounded-full mx-1 transition-all	duration-300 cursor-pointer justify-center w-16'>
+        <div class='flex items-baseline px-4 py-1'>
+          <div class='text-center'>
+            <p
+              class='text-primary-600 group-hover:text-white text-lg transition-all  group-hover:font-semibold duration-300'>
+              S </p>
+            <p
+              class='text-primary-600 group-hover:text-white -mb-0 rounded-full bg-warning-200 group-hover:bg-secondary-300 p-3 group-hover:font-bold transition-all	duration-300'>
+              17 </p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  <div class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="bg-white p-4 rounded-lg shadow-md">
+  
+      <div class="grid grid-cols-7 gap-2 text-center ">
+        <div class="text-purple-700">S</div>
+        <div class="text-purple-700">M</div>
+        <div class="text-purple-700">T</div>
+        <div class="text-purple-700">W</div>
+        <div class="text-purple-700 ">T</div>
+        <div class="text-purple-700">F</div>
+        <div class="text-purple-700">S</div>
+  
+        <div class="text-purple-700 p-2 rounded-full bg-warning-200">10</div>
+        <div class="text-purple-700 p-2 rounded-full bg-warning-200">11</div>
+        <div class="text-purple-700 p-2 rounded-full bg-warning-200">12</div>
+        <div class="text-purple-700 p-2 rounded-full bg-warning-200">13</div>
+        <div class="text-white p-2 rounded-full bg-purple-700 relative">
+          <span
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center">14</span>
+        </div>
+        <div class="text-purple-700 p-2 rounded-full bg-warning-200">15</div>
+        <div class="text-purple-700 p-2 rounded-full bg-warning-200">16</div>
+      </div>
+    </div>
+  </div>
+  
