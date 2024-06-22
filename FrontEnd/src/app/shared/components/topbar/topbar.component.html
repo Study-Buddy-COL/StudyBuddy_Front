@@ -1,0 +1,21 @@
+<div class="content">
+    <div class="espacioTitulo">
+        <h2 class="title">{{ title }}</h2>
+    </div>
+    
+    <div class="espacioSearchBarAndPic">
+        <div class="input-group mb-3" style="width: 100%; align-items: center;">
+            <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="basic-addon2" style="height: 40px; border: 2px solid #9C82DE; border-radius: 20px;">
+            <div class="input-group-append" style="margin-left: -1px;">
+                <button class="btn btn-outline-secondary" type="button" style="background-color: #9C82DE; height: 40px;  border: 2px solid #9C82DE; border-radius: 20px;" (click)="onSearchClick()"> 
+                    <i class="bi bi-search text-white"></i>
+                </button>
+            </div>
+            <div class="input-group-append" style="margin-left: 3%;">
+                <button type="button" class="profile-button" (click)="onProfileClick()">
+                    <img src="assets/images/ProfilePic.png" alt="Imagen" class="profile-pic">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

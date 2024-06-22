@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import {SidebarComponent} from "../../global/sidebar/sidebar.component";
 import {NgOptimizedImage} from "@angular/common";
-// import { TopbarComponent } from '../../global/topbar/topbar.component';
+import { TopbarComponent } from '../../shared/components/topbar/topbar.component';
+import { SidebarComponent } from '../../shared/components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-space-repetition',
   standalone: true,
   imports: [
-    // SidebarComponent,
-    // TopbarComponent,
+    SidebarComponent, // Sidebar
+    TopbarComponent, // Topbar
     NgOptimizedImage,
     CommonModule // CRUCIAL para *NgFor
   ], templateUrl: './space-repetition.component.html',
