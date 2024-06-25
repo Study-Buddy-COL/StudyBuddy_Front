@@ -1,5 +1,6 @@
 import {Routes} from "@angular/router";
 
-export const POMODORO_ROUTES :Routes = [
+export const SETTINGS_ROUTES :Routes = [
   { path: '', }
+
 ]
