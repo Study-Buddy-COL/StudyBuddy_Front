@@ -4,6 +4,6 @@
 
 @layer components {
   .card {
-    @apply place-content-center  ;
+    @apply place-content-center border-2 border-amber-600 ;
   }
 }
