@@ -1,1 +1,83 @@
-<p>classes works!</p>
+<div class="flex flex-grow justify-between py-2">
+  <h1 class="card ">Library of learning resources</h1>
+
+
+  <div class="flex items-center card">
+    <button *ngIf="!expanded" (click)="toggleExpand()" class="flex">
+      <img class="w-10" src="./assets/icons/icon-add-task.svg" alt="Icon">
+    </button>
+    <div *ngIf="expanded" class="flex  bg-primary-500 rounded-full py-1">
+      <img class="w-8 mx-2 cursor-pointer" src="./assets/icons/icon-tick-circle-document.svg" alt="Icon">
+      <img class="w-8 mx-2 cursor-pointer" src="./assets/icons/icon-microphone.svg" alt="Icon">
+      <img class="w-8 mx-3  cursor-pointer" src="./assets/icons/icon-edit-document.svg" alt="Icon">
+      <img class="w-8 mx-3 cursor-pointer" src="./assets/icons/icon-document-upload.svg" alt="Icon">
+      <img (click)="toggleExpand()" class="w-7 mx-2 cursor-pointer " src="./assets/icons/icon-close.svg">
+    </div>
+  </div>
+
+</div>
+
+
+<div class="bg-primary-600 text-white  rounded-lg pb-3 ">
+
+  <!-- 1 -->
+  <div class="flex items-center bg-warning-200 p-4  ">
+    <img src="https://via.placeholder.com/50" alt="Icon" class="w-12 h-12 mr-4">
+    <div class="flex-1 md:flex md:items-center md:space-x-4">
+      <h3 class="font-semibold text-primary-600">Physics I - Example book</h3>
+      <p class="hidden text-sm text-primary-700 md:block lg:inline-block pl-16">This volume blends everyman's wisdom
+        with scientific magic, taking you on a captivating journey through cosmic mysteries.</p>
+    </div>
+
+    <div class="flex items-center justify-end space-x-2">
+      <p class="text-sm text-purple-800">Added today</p>
+      <a href="#" class="text-purple-800">
+        <img class="h-6 w-6 cursor-pointer" src="./assets/icons/icon-arrow-circle-right.svg" alt="Icon">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- 2 -->
+  <div class="flex items-center bg-warning-200 p-4  ">
+    <img src="https://via.placeholder.com/50" alt="Icon" class="w-12 h-12 mr-4">
+    <div class="flex-1 md:flex md:items-center md:space-x-4">
+      <h3 class="font-semibold text-primary-600">Physics I - Example book</h3>
+      <p class="hidden text-sm text-primary-700 md:block lg:inline-block pl-16">This volume blends everyman's wisdom
+        with scientific magic, taking you on a captivating journey through cosmic mysteries.</p>
+    </div>
+
+    <div class="flex items-center justify-end space-x-2">
+      <p class="text-sm text-purple-800">Added today</p>
+      <a href="#" class="text-purple-800">
+        <img class="h-6 w-6 cursor-pointer" src="./assets/icons/icon-arrow-circle-right.svg" alt="Icon">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- 3 -->
+  <div class="flex items-center bg-secondary-400 p-4 rounded-b-lg  mb-3">
+    <img src="https://via.placeholder.com/50" alt="Icon" class="w-12 h-12 mr-4">
+    <div class="flex-1 md:flex md:items-center md:space-x-4">
+      <h3 class="font-semibold text-white">Physics I - Example book</h3>
+      <p class="hidden text-sm text-white md:block lg:inline-block pl-16">This volume blends everyman's wisdom with
+        scientific magic, taking you on a captivating journey through cosmic mysteries.</p>
+    </div>
+
+    <div class="flex items-center justify-end space-x-2">
+      <p class="text-sm text-white">Added today</p>
+      <a href="#" class="text-white">
+        <img class="h-6 w-6 cursor-pointer" src="./assets/icons/icon-arrow-circle-right.svg" alt="Icon">
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="flex justify-between items-center mx-5">
+    <h3 class="text-lg ">You got 6 classes</h3>
+    <a href="#" class="text-sm underline">See all</a>
+  </div>
+
+</div>
