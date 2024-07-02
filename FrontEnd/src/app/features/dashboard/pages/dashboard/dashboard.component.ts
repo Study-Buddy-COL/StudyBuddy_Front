@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {SidebarComponent} from "../../../../shared/components/sidebar/sidebar.component";
 import {EventsComponent} from "../../components/events/events.component";
 import {NgIf} from "@angular/common";
 import {TopbarComponent} from "../../components/topbar/topbar.component";
 import {ClassesComponent} from "../../components/classes/classes.component";
+import Chart from 'chart.js/auto';
+import {ResumeComponent} from "../../components/resume/resume.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -13,7 +15,8 @@ import {ClassesComponent} from "../../components/classes/classes.component";
     EventsComponent,
     NgIf,
     TopbarComponent,
-    ClassesComponent
+    ClassesComponent,
+    ResumeComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
