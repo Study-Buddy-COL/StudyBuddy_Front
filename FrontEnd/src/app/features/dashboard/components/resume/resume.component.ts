@@ -51,6 +51,9 @@ export class ResumeComponent implements OnInit, AfterViewInit {
               tooltip: {
                 backgroundColor: '#795CC2',
                 displayColors: false,
+                intersect: false,
+                mode: 'index',
+
                 callbacks: {
                   label: function(tooltipItem) {
                     if (tooltipItem && typeof tooltipItem.raw === 'number') {
@@ -64,6 +67,10 @@ export class ResumeComponent implements OnInit, AfterViewInit {
                   },
                 }
               }
+            },
+            hover: {
+              mode: 'index',
+              intersect: false,
             },
             scales: {
               x: {
