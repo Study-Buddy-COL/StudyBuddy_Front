@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'bricolage': ['Bricolage Grotesque', 'sans-serif'],
+      },
       colors: {
         'primary-100': '#F0EAFE',
         'primary-200': '#D0C3F2',

@@ -1,17 +1,17 @@
 <div class="flex flex-grow justify-between py-2">
-  <h1 class="card ">Library of learning resources</h1>
+  <h2 >Library of learning resources</h2>
 
 
-  <div class="flex items-center card">
+  <div class="flex items-center ">
     <button *ngIf="!expanded" (click)="toggleExpand()" class="flex">
-      <img class="w-10" src="./assets/icons/icon-add-task.svg" alt="Icon">
+      <img class="w-8" src="./assets/icons/icon-add-task.svg" alt="Icon">
     </button>
     <div *ngIf="expanded" class="flex  bg-primary-500 rounded-full py-1 ">
-      <img class="w-8 mx-2 cursor-pointer" src="./assets/icons/icon-tick-circle-document.svg" alt="Icon">
-      <img class="w-8 mx-2 cursor-pointer" src="./assets/icons/icon-microphone.svg" alt="Icon">
-      <img class="w-8 mx-3  cursor-pointer" src="./assets/icons/icon-edit-document.svg" alt="Icon">
-      <img class="w-8 mx-3 cursor-pointer" src="./assets/icons/icon-document-upload.svg" alt="Icon">
-      <img (click)="toggleExpand()" class="w-7 mx-2 cursor-pointer " src="./assets/icons/icon-close.svg">
+      <img class="w-6 mx-2 cursor-pointer" src="./assets/icons/icon-tick-circle-document.svg" alt="Icon">
+      <img class="w-6 mx-2 cursor-pointer" src="./assets/icons/icon-microphone.svg" alt="Icon">
+      <img class="w-6 mx-3  cursor-pointer" src="./assets/icons/icon-edit-document.svg" alt="Icon">
+      <img class="w-6 mx-3 cursor-pointer" src="./assets/icons/icon-document-upload.svg" alt="Icon">
+      <img (click)="toggleExpand()" class="w-5 mx-2 cursor-pointer " src="./assets/icons/icon-close.svg">
     </div>
   </div>
 

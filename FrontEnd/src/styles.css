@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +7,9 @@
 @layer components {
   .card {
     @apply place-content-center border-2 border-amber-600 ;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-primary-400 font-bricolage;
   }
 }
