@@ -5,11 +5,60 @@
 @tailwind utilities;
 
 @layer components {
-  .card {
-    @apply place-content-center border-2 border-amber-600 ;
+
+  /* Labels */
+  h1 {
+    @apply text-3xl font-semibold text-primary-400 font-bricolage;
   }
 
   h2 {
     @apply text-2xl font-semibold text-primary-400 font-bricolage;
+  }
+
+
+
+  /* Base styles for buttons */
+  /* Primary button with label and icon */
+  .btn-base-primary {
+    @apply bg-secondary-500 border-2 border-secondary-500 text-white inline-flex items-center justify-center py-2 px-6 rounded-lg font-semibold transition-all duration-200 ease-in-out;
+    /* Ensures text is centered within the button */
+    text-align: center;
+
+    /* Disabled State */
+    &:disabled {
+      @apply bg-secondary-500 text-white opacity-40 cursor-not-allowed border-2 border-secondary-500;
+    }
+    /* Hover State */
+    &:hover {
+      @apply bg-secondary-600 border-2 border-secondary-600;
+    }
+
+    /* Pressed State */
+    &:active {
+      @apply bg-secondary-700 border-2 border-secondary-700 ;
+    }
+
+    /* Focused State */
+    &:focus {
+      @apply bg-secondary-500 border-2 border-secondary-200;
+    }
+  }
+
+  /* Button with Icon on the Left */
+  .primary-btn-icon-left {
+    @apply inline-flex items-center justify-center;
+    /* Adds space between the icon and the label */
+    .icon {
+      @apply mr-2;
+    }
+  }
+
+  /* Button with Icon on the Right */
+  .primary-btn-icon-right {
+    @apply inline-flex items-center justify-center;
+    /* Adds space between the label and the icon */
+    .icon {
+      @apply ml-2;
+    }
   }
 }
