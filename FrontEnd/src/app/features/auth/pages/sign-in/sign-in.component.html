@@ -17,7 +17,6 @@
     />
     
     <!-- Div que ocupa el 40% de la imagen hacia la derecha con margen -->
-    <!-- Agregar bg-opacity-50 bg-black para ver lo que ocupa el div -->
     <div class="absolute top-0 right-0 w-[40%] h-full mr-[5%] p-8 flex flex-col justify-center text-white">
       <!-- Texto y formulario de login -->
       <h1 class="text-5xl font-bricolage text-[#F25842] mb-6 text-center">Welcome Buddy!</h1>
@@ -42,21 +41,21 @@
             class="mt-1 w-full px-5 py-2.5 border-2 border-[#F25842] rounded-lg text-[#F25842] focus:ring-2 focus:ring-[#F25842] focus:outline-none placeholder-[#FCB1A6]"
           />
         </div>
-        <!-- Botón "Let’s study →" con borde más pronunciado -->
-        <div class="flex justify-center">
-          <button
-            type="submit"
-            class="w-[50%] py-2 px-6 bg-[#F25842] text-white rounded-lg border-2 border-[#F25842] hover:bg-[#D83D27] transition"
-          >
-            Let’s study →
-          </button>
-        </div>
       </form>
+
+      <!-- Botón "Let’s study →" con borde más pronunciado (fuera del formulario) -->
+      <div class="flex justify-center mb-1 mt-8">
+        <button
+          class="w-[50%] py-2 px-6 bg-[#F25842] text-white rounded-lg border-2 border-[#F25842] hover:bg-[#D83D27] transition"
+          [routerLink]="'/overview'">
+          Let’s study → 
+        </button>
+      </div>
 
       <!-- Línea con texto centrado, en una sola línea y con las líneas extendiéndose hasta el borde -->
       <div class="flex items-center my-4 w-full justify-center">
         <hr class="flex-grow border-[#F25842] border-t-2" />
-        <span class="text-[#F25842] mx-4 whitespace-nowrap">New here?</span>
+        <span class="text-[#F25842] mx-4 whitespace-nowrap font-bold">New here?</span>
         <hr class="flex-grow border-[#F25842] border-t-2" />
       </div>
 
@@ -64,8 +63,8 @@
       <div class="flex justify-center">
         <button
           class="w-[50%] py-2 px-6 border-2 border-[#F25842] text-[#F25842] rounded-lg hover:bg-[#F25842] hover:text-white transition"
-        >
-          Become a buddy →
+          [routerLink]="'/sign-up'">
+          Become a buddy → 
         </button>
       </div>
     </div>
