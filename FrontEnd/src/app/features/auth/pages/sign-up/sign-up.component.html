@@ -1,1 +1,77 @@
-<p>sign-up works!</p>
+<div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-[#301E5C] via-[#301E5C] to-[#5E41A7]">
+    <!-- Contenedor del logo -->
+    <div class="w-[22.5%] mb-5 translate-y-[-10%]">
+      <img
+        src="./assets/images/LogoStudyBuddy_Welcome_SignUp.png"
+        alt="Logo de Study Buddy"
+        class="w-full object-contain"
+      />
+    </div>
+    
+    <!-- Contenedor de la imagen -->
+    <div class="relative w-[60%] h-[45%] max-w-[60%] max-h-[45%] translate-y-3">
+      <img
+        src="./assets/images/WelcomeBuddy_SignUp.png"
+        alt="Descripción de la imagen"
+        class="w-full h-full object-cover"
+      />
+      
+      <!-- Div que ocupa el 40% de la imagen hacia la derecha con margen -->
+      <div class="absolute top-0 right-0 w-[40%] h-full mr-[5%] p-8 flex flex-col justify-center text-white">
+        <!-- Texto y formulario de login -->
+        <h1 class="text-5xl font-bricolage text-[#795CC2] mb-6 text-center">Ready to team up?</h1>
+  
+        <!-- Formulario de login -->
+        <form class="space-y-5">
+          <div class="flex space-x-5">
+            <!-- Username -->
+            <div class="w-full">
+              <label for="username" class="block text-base font-medium text-[#795CC2]">Username</label>
+              <input
+                id="username"
+                type="text"
+                placeholder="ExampleBuddy39"
+                class="mt-1 w-full px-5 py-2.5 border-2 border-[#795CC2] rounded-lg text-[#795CC2] focus:ring-2 focus:ring-[#795CC2] focus:outline-none placeholder-[#D0C3F2]"
+              />
+            </div>
+            <!-- Password -->
+            <div class="w-full">
+              <label for="password" class="block text-base font-medium text-[#795CC2]">Password</label>
+              <input
+                id="password"
+                type="password"
+                placeholder="*********"
+                class="mt-1 w-full px-5 py-2.5 border-2 border-[#795CC2] rounded-lg text-[#795CC2] focus:ring-2 focus:ring-[#795CC2] focus:outline-none placeholder-[#D0C3F2]"
+              />
+            </div>
+          </div>
+  
+          <!-- Email -->
+          <div class="w-full">
+            <label for="email" class="block text-base font-medium text-[#795CC2]">Email</label>
+            <input
+              id="email"
+              type="text"
+              placeholder="Example@buddy.co"
+              class="mt-1 w-full px-5 py-2.5 border-2 border-[#795CC2] rounded-lg text-[#795CC2] focus:ring-2 focus:ring-[#795CC2] focus:outline-none placeholder-[#D0C3F2]"
+            />
+          </div>
+        </form>
+  
+        <!-- Botón "Let’s study →" con borde más pronunciado (fuera del formulario) -->
+        <div class="flex justify-center mb-1 mt-8">
+          <button
+            class="w-[50%] py-2 px-6 bg-[#F25842] text-white rounded-lg border-2 border-[#F25842] hover:bg-[#D83D27] transition"
+            [routerLink]="'/overview'">
+            Get started → 
+          </button>
+        </div>
+  
+        <div class="flex items-center my-4 w-full justify-center">
+            <span class="text-[#795CC2] mx-2 whitespace-nowrap">Already a Buddy? </span>
+            <a [routerLink]="'/sign-in'" class="text-[#795CC2] font-bold">Log in</a>
+        </div>        
+
+      </div>
+    </div>
+  </div>
