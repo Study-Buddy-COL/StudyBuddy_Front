@@ -1,6 +1,6 @@
 # FrontEnd
 
-This was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+Proof was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
 ## Development server
 
