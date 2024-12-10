@@ -1,72 +1,19 @@
-<div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-[#F56A56] via-[#FF4423] to-[#F56A56]">
-  <!-- Contenedor del logo -->
-  <div class="w-[22.5%] mb-5 translate-y-[-10%]">
-    <img
-      src="./assets/images/LogoStudyBuddy_Welcome_SignIn.png"
-      alt="Logo de Study Buddy"
-      class="w-full object-contain"
-    />
-  </div>
-  
-  <!-- Contenedor de la imagen -->
-  <div class="relative w-[60%] h-[45%] max-w-[60%] max-h-[45%] translate-y-3">
-    <img
-      src="./assets/images/WelcomeBuddy_SignIn.png"
-      alt="Descripción de la imagen"
-      class="w-full h-full object-cover"
-    />
-    
-    <!-- Div que ocupa el 40% de la imagen hacia la derecha con margen -->
-    <div class="absolute top-0 right-0 w-[40%] h-full mr-[5%] p-8 flex flex-col justify-center text-white">
-      <!-- Texto y formulario de login -->
-      <h1 class="text-5xl font-bricolage text-[#F25842] mb-6 text-center">Welcome Buddy!</h1>
+<div class="bg-secondary-500 border-secondary-500 py-40 h-screen">
 
-      <!-- Formulario de login -->
-      <form class="space-y-5">
-        <div>
-          <label for="email" class="block text-base font-medium text-[#F25842]">Email or username</label>
-          <input
-            id="email"
-            type="text"
-            placeholder="example@buddy.com"
-            class="mt-1 w-full px-5 py-2.5 border-2 border-[#F25842] rounded-lg text-[#F25842] focus:ring-2 focus:ring-[#F25842] focus:outline-none placeholder-[#FCB1A6]"
-          />
-        </div>
-        <div>
-          <label for="password" class="block text-base font-medium text-[#F25842]">Password</label>
-          <input
-            id="password"
-            type="password"
-            placeholder="*********"
-            class="mt-1 w-full px-5 py-2.5 border-2 border-[#F25842] rounded-lg text-[#F25842] focus:ring-2 focus:ring-[#F25842] focus:outline-none placeholder-[#FCB1A6]"
-          />
-        </div>
-      </form>
 
-      <!-- Botón "Let’s study →" con borde más pronunciado (fuera del formulario) -->
-      <div class="flex justify-center mb-1 mt-8">
-        <button
-          class="w-[50%] py-2 px-6 bg-[#F25842] text-white rounded-lg border-2 border-[#F25842] hover:bg-[#D83D27] transition"
-          [routerLink]="'/overview'">
-          Let’s study → 
-        </button>
+  <div class="container mx-auto bg-[#ffc864]">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-center ">
+
+      <!-- Left Side (Image) -->
+      <div class="bg-blue-400 hidden md:block mx-auto">
+        <img src="https://via.placeholder.com/600" alt="Sign In Image"/>
       </div>
 
-      <!-- Línea con texto centrado, en una sola línea y con las líneas extendiéndose hasta el borde -->
-      <div class="flex items-center my-4 w-full justify-center">
-        <hr class="flex-grow border-[#F25842] border-t-2" />
-        <span class="text-[#F25842] mx-4 whitespace-nowrap font-bold">New here?</span>
-        <hr class="flex-grow border-[#F25842] border-t-2" />
+      <!-- Right Side (Sign In Form) -->
+      <div class=" px-4 lg:px-16 ">
+        <app-sign-in-input></app-sign-in-input>
       </div>
 
-      <!-- Botón "Become a buddy →" con borde más pronunciado -->
-      <div class="flex justify-center">
-        <button
-          class="w-[50%] py-2 px-6 border-2 border-[#F25842] text-[#F25842] rounded-lg hover:bg-[#F25842] hover:text-white transition"
-          [routerLink]="'/sign-up'">
-          Become a buddy → 
-        </button>
-      </div>
     </div>
   </div>
 </div>

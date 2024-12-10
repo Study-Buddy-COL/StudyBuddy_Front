@@ -6,6 +6,7 @@
 
 @layer components {
 
+  /* ------------------------------------------------------------------------------------------------------------- */
   /* Labels */
   h1 {
     @apply text-3xl font-semibold text-primary-400 font-bricolage;
@@ -16,7 +17,7 @@
   }
 
 
-
+  /* ------------------------------------------------------------------------------------------------------------- */
   /* Base styles for primary buttons */
   /* Primary button with label and icon */
   .btn-base-primary {
@@ -42,13 +43,11 @@
     &:active {
       @apply bg-secondary-700 border-2 border-secondary-700 ;
     }
-
-
   }
 
   /* Button with Icon on the Left */
   .primary-btn-icon-left {
-    @apply inline-flex items-center justify-center;
+    @apply btn-base-primary inline-flex items-center justify-center;
     /* Adds space between the icon and the label */
     .icon {
       @apply mr-2;
@@ -57,7 +56,7 @@
 
   /* Button with Icon on the Right */
   .primary-btn-icon-right {
-    @apply inline-flex items-center justify-center;
+    @apply btn-base-primary inline-flex items-center justify-center;
     /* Adds space between the label and the icon */
     .icon {
       @apply ml-2;
@@ -94,7 +93,7 @@
 
   /* Button with Icon on the Left */
   .secondary-btn-icon-left {
-    @apply inline-flex items-center justify-center;
+    @apply btn-base-secondary inline-flex items-center justify-center;
     /* Adds space between the icon and the label */
     .icon {
       @apply mr-2;
@@ -103,11 +102,190 @@
 
   /* Button with Icon on the Right */
   .secondary-btn-icon-right {
-    @apply inline-flex items-center justify-center;
+    @apply btn-base-secondary inline-flex items-center justify-center;
     /* Adds space between the label and the icon */
     .icon {
       @apply ml-2;
     }
   }
+
+  /* ------------------------------------------------------------------------------------------------------------- */
+  /* Base input styles */
+  .input-base-primary {
+    @apply w-full px-2 py-2 border-2 border-primary-300 rounded-lg text-primary-500 placeholder-primary-300 focus:outline-none transition-all duration-200 ease-in-out;
+  }
+
+  /* Text Input */
+  .input-text-primary {
+    @apply input-base-primary bg-white ;
+
+    /* Hover State */
+    &:hover {
+      @apply border-primary-500;
+    }
+
+    /* Focus State */
+    &:focus {
+      @apply border-primary-500 ring-2 ring-primary-300;
+    }
+
+    /* Disabled State */
+    &:disabled {
+      @apply bg-primary-100  cursor-not-allowed;
+    }
+
+    /* Error State */
+    &.input-error {
+      @apply border-red-500 text-red-600 placeholder-red-300;
+    }
+  }
+
+  /* Textarea */
+  .textarea-base-primary {
+    @apply input-base-primary resize-none ;
+
+
+    /* Hover State */
+    &:hover {
+      @apply border-primary-500;
+    }
+
+    /* Focus State */
+    &:focus {
+      @apply border-primary-500 ring-2 ring-primary-300;
+    }
+
+    /* Disabled State */
+    &:disabled {
+      @apply bg-primary-100 cursor-not-allowed;
+    }
+
+    /* Error State */
+    &.input-error {
+      @apply border-red-500 text-red-600 placeholder-red-300;
+    }
+
+  }
+
+  /* Select */
+  .select-base-primary {
+    @apply input-base-primary bg-white cursor-pointer ;
+
+    /* Hover State */
+    &:hover {
+      @apply border-primary-500;
+    }
+
+    /* Focus State */
+    &:focus {
+      @apply border-primary-500 ring-2 ring-primary-300;
+    }
+
+    /* Disabled State */
+    &:disabled {
+      @apply bg-primary-100 cursor-not-allowed;
+    }
+
+    /* Error State */
+    &.input-error {
+      @apply border-red-500 text-red-600 placeholder-red-300;
+    }
+  }
+
+
+
+  /* Base input styles */
+  .input-base-secondary {
+    @apply w-full px-2 py-2 border-2 border-secondary-300 rounded-lg text-secondary-500 placeholder-secondary-300 focus:outline-none transition-all duration-200 ease-in-out;
+  }
+
+  /* Text Input */
+  .input-text-secondary {
+    @apply input-base-secondary bg-white ;
+
+    /* Hover State */
+    &:hover {
+      @apply border-secondary-500;
+    }
+
+    /* Focus State */
+    &:focus {
+      @apply border-secondary-500 ring-2 ring-secondary-300;
+    }
+
+    /* Disabled State */
+    &:disabled {
+      @apply bg-secondary-100 cursor-not-allowed;
+    }
+
+    /* Error State */
+    &.input-error {
+      @apply border-red-500 text-red-600 placeholder-red-300;
+    }
+  }
+
+  /* Textarea */
+  .textarea-base-secondary {
+    @apply input-base-secondary resize-none ;
+
+
+    /* Hover State */
+    &:hover {
+      @apply border-secondary-500;
+    }
+
+    /* Focus State */
+    &:focus {
+      @apply border-secondary-500 ring-2 ring-secondary-300;
+    }
+
+    /* Disabled State */
+    &:disabled {
+      @apply bg-secondary-100 cursor-not-allowed;
+    }
+
+    /* Error State */
+    &.input-error {
+      @apply border-red-500 text-red-600 placeholder-red-300;
+    }
+
+  }
+
+  /* Select */
+  .select-base-secondary {
+    @apply input-base-secondary bg-white cursor-pointer ;
+
+    /* Hover State */
+    &:hover {
+      @apply border-secondary-500;
+    }
+
+    /* Focus State */
+    &:focus {
+      @apply border-secondary-500 ring-2 ring-secondary-300;
+    }
+
+    /* Disabled State */
+    &:disabled {
+      @apply bg-secondary-100 cursor-not-allowed;
+    }
+
+    /* Error State */
+    &.input-error {
+      @apply border-red-500 text-red-600 placeholder-red-300;
+    }
+  }
+
+
+  /* ------------------------------------------------------------------------------------------------------------- */
+  .label-primary {
+    @apply block  font-semibold text-primary-500;
+  }
+
+  .label-secondary {
+    @apply block  font-semibold text-secondary-500;
+  }
+  /* ------------------------------------------------------------------------------------------------------------- */
+
 
 }

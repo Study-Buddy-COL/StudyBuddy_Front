@@ -1,0 +1,22 @@
+.btn-no-bg  {
+  @apply bg-transparent text-secondary-500;
+
+  /* Disabled State */
+  &:disabled {
+    @apply bg-secondary-500 text-white;
+  }
+  /* Hover State */
+  &:hover {
+    @apply bg-secondary-600  text-white;
+  }
+
+  /* Focused State */
+  &:focus {
+    @apply bg-secondary-500 text-white;
+  }
+
+  /* Pressed State */
+  &:active {
+    @apply bg-secondary-700 text-white;
+  }
+}
